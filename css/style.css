@@ -2,13 +2,79 @@
 
 /* Paleta de cores:
 
-Azul escuro: #026873
-Azul claro: #24B0BF
+Azul escuro: 
+Azul claro: 
 Bege: #D99962
 Vermelho:# BF1304
 Vinho: #590202
 
-gradiente: #CB1900 #FACF8E #35A6B8
+gradiente: 
 
 */
 
+:root {
+    --corAzulEscuro: #026873;
+    --corAzulClaro: #24B0BF;
+    --corBege: #D99962;
+    --corVermelho:#BF1304;
+    --corVinho: #590202;
+    --gradienteRight: linear-gradient(to right, #FACF8E, #35A6B8);
+    --gradienteBottom: linear-gradient(to bottom, #FACF8E, #35A6B8);
+    --gradienteLeft: linear-gradient(to left, #FACF8E, #35A6B8);
+    --gradienteTop: linear-gradient(to top, #FACF8E, #35A6B8);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body {
+    background-image: var(--gradienteBottom);
+    background-repeat: no-repeat;
+    height: 100svh;
+    width: 100svw;
+}
+
+main {
+    height: 100svh;
+    width: 100svw;
+    position: relative;
+}
+
+#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    background-color: white;
+    width: 90%;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.438);
+}
+
+#login #imagem {
+    background: var(--corVinho) url(../imagem/img-login-pq.png) no-repeat;
+    background-size: cover;
+    height: 200px;
+    display: block;
+    transition: width 0.3s;
+    transition-timing-function: ease;
+}
+
+#login #formulario {
+    padding: 10px;
+    display: block;
+}
+
+#formulario h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+#formulario p {
+    font-size: 0.8em;
+}
