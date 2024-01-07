@@ -1,6 +1,7 @@
 @media screen and (min-width: 768px) and (max-width: 992px) {
     #login {
         width: 80svw;
+        height: 50svh;
     }
     #login #imagem {
         float: left;
@@ -14,6 +15,16 @@
     }
     #formulario p {
         font-size: 1em;
+        margin-bottom: 20px;
+    }
+    form input[type=email] {
+        margin-bottom: 20px;
+    }
+    form input[type=password] {
+        margin-bottom: 20px;
+    }
+    form input[type=submit] {
+        margin-bottom: 20px;
     }
 }
 
@@ -36,5 +47,19 @@
     #formulario p {
         font-size: 1.2em;
     }
-
+    form input[type=email] {
+        margin-bottom: 20px;
+        height: 50px;
+    }
+    form input[type=password] {
+        margin-bottom: 20px;
+        height: 50px;
+    }
+    form input[type=submit] {
+        margin-bottom: 20px;
+        height: 50px;
+    }
+    .icon {
+        padding-top: 13px;
+    }
 }
